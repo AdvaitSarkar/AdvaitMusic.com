@@ -11,7 +11,7 @@ ul.nav
 {
 	padding: 8px;
 	border: 0px solid #ccc;
-	border-radius: 0px 0px 7px 7px;
+	border-radius: 0 0 0.2rem 0.2rem;
 
 	max-width:684px;
 	margin-top: 0;
@@ -20,7 +20,7 @@ ul.nav
 
 	list-style-type:none;
 	
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,1);
 	
 	font-family:georgia, times, serif;
 	font-variant: small-caps;
@@ -89,7 +89,8 @@ div.content
 	margin-right:auto;
 	
 	border: 0px solid #ccc;
-    box-shadow: 0px 0px 1rem #aaa; /* box-shadow:inset 0px 0px 15px #888; */
+	box-shadow: 0px 0px 1rem #aaa; /* box-shadow:inset 0px 0px 15px #888; */
+	border-radius: 0.2rem;
 	
 	overflow:hidden;
 }
@@ -250,7 +251,7 @@ div.footer > p
 	text-transform:lowercase;
 }
 
-div.nonexistent
+.nonexistent
 {
 	display:none;
 }

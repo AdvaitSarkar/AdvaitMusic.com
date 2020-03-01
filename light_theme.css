@@ -1,7 +1,8 @@
 body
 {
 	margin:0px;
-	background: linear-gradient(orangered,blue); /*url('images/album_art/bltb-graphicsonly-bg.jpg');*/
+	background: #fff6e6; /* url('images/2020\ Website\ header.png'); */
+	/* #fff6e6; */ /* linear-gradient(orangered,blue); */ /*url('images/album_art/bltb-graphicsonly-bg.jpg');*/
 	background-size: 100% auto;
 }
 
@@ -10,9 +11,10 @@ ul.nav
 {
 	padding: 8px;
 	border: 0px solid #ccc;
-	border-radius: 7px;
+	border-radius: 0px 0px 7px 7px;
 
 	max-width:684px;
+	margin-top: 0;
 	margin-left:auto;
 	margin-right:auto;
 
@@ -41,7 +43,7 @@ ul.nav > li > a
 ul.nav > li > a:hover
 {
 	color: #000;
-    box-shadow:inset 0px 0px 7px #888;
+    box-shadow: 0px 0px 7px #888; /* box-shadow:inset 0px 0px 7px #888; */
 	transition: box-shadow .2s linear;
 }
 /* -------------------- END: Styles for navigation -------------------- */
@@ -78,7 +80,7 @@ div.header > h1
 /* -------------------- START: Styles for content -------------------- */
 div.content
 {
-	margin-top:10px;
+	margin-top: 0.5rem;
 	padding: 0px 0px 10px 0px;
 	
 	background:#fff;
@@ -87,7 +89,7 @@ div.content
 	margin-right:auto;
 	
 	border: 0px solid #ccc;
-    box-shadow:inset 0px 0px 15px #888;
+    box-shadow: 0px 0px 1rem #aaa; /* box-shadow:inset 0px 0px 15px #888; */
 	
 	overflow:hidden;
 }
@@ -176,6 +178,46 @@ img.social
 	padding-left:10px;
 	padding-right:10px;
 }
+
+/* button css adapted from https://fdossena.com/?p=html5cool/buttons/i.frag */
+
+a.button1{
+	display:inline-block;
+	padding:0.35em 1.2em;
+	border: 1px solid black;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-weight:300;
+	text-align:center;
+	transition: all 0.2s;
+	background-color: rgb(151, 202, 50);
+}
+a.button1:hover{
+	color:#000000;
+	background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+	a.button1{
+	display:block;
+	margin:0.4em auto;
+	}
+} 
+
+.bouncy{
+	animation:bouncy 5s infinite linear;
+	position:relative;
+	}
+	@keyframes bouncy {
+	0%{top:0em}
+	40%{top:0em}
+	43%{top:-0.9em}
+	46%{top:0em}
+	48%{top:-0.4em}
+	50%{top:0em}
+	100%{top:0em;}
+} 
 
 /* -------------------- END: Styles for content -------------------- */
 
